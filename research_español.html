@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <meta charset="utf-8">
+    <!-- need to complete this part above -->
+    <title>Juan Sebastián Ivars | Research</title>
+    <!-- Bootstrap & MDB -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+   <!-- Styles -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+    <link rel="stylesheet" href="/assets/css/main.css"> <!-- css/gustave.css -->
+    <link rel="canonical" href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Bloque de estilos CSS -->
+ <style>
+     body {
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+     }
+
+     .container {
+       width: 90%;
+       max-width: 1200px;
+       margin: auto;
+     }
+
+     img {
+       max-width: 100%;
+       height: auto;
+     }
+
+     /* Estilo especial para pantallas chicas */
+     @media (max-width: 768px) {
+       body {
+         font-size: 16px;
+       }
+       .menu {
+         display: none; /* ejemplo: ocultar menú grande en celular */
+       }
+     }
+
+     /* Subtle, rounded controls throughout the research list. */
+     .research-page .btn {
+       border-radius: 999px !important;
+       padding: 0.34rem 0.85rem !important;
+       font-size: 0.78rem;
+       font-weight: 500;
+       line-height: 1.3;
+       letter-spacing: 0;
+       text-transform: none;
+       box-shadow: none !important;
+       margin: 0.1rem 0.25rem 0.15rem 0;
+     }
+
+     .research-page .btn:hover,
+     .research-page .btn:focus {
+       box-shadow: 0 2px 9px rgba(0, 0, 0, 0.09) !important;
+     }
+
+     .research-section-heading {
+       display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+       gap: 0.65rem;
+     }
+
+     .research-toggle .toggle-icon {
+       display: inline-block;
+       margin-left: 0.3rem;
+       font-size: 0.7rem;
+       transition: transform 0.2s ease;
+     }
+
+     .research-toggle[aria-expanded="true"] .toggle-icon {
+       transform: rotate(180deg);
+     }
+
+     .research-toggle .label-hide { display: none; }
+     .research-toggle[aria-expanded="true"] .label-show { display: none; }
+     .research-toggle[aria-expanded="true"] .label-hide { display: inline; }
+
+     /* The illustration belongs to the featured publication only. */
+     .featured-publication {
+       display: grid;
+       grid-template-columns: minmax(0, 1fr) minmax(205px, 275px);
+       gap: 1.75rem;
+       align-items: start;
+     }
+
+     .publication-figure {
+       margin: 0 0 1rem;
+       padding: 0.55rem;
+       border: 1px solid #e6e9ed;
+       border-radius: 12px;
+       background: #fff;
+       text-align: center;
+     }
+
+     .publication-figure img {
+       display: block;
+       width: 100%;
+       height: auto;
+       transition: opacity 0.2s ease;
+     }
+
+     .publication-figure figcaption {
+       margin-top: 0.35rem;
+       font-size: 0.73rem;
+       line-height: 1.4;
+       color: #7b8289;
+     }
+
+     @media (max-width: 800px) {
+       .featured-publication { grid-template-columns: 1fr; gap: 0.6rem; }
+       .publication-figure { max-width: 300px; margin: 0 auto 1rem; }
+     }
+   </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light navbar-expand-md">
+
+      <a class="navbar-brand" href="/"> <b>Juan Sebastián Ivars</b> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index_español.html">Inicio<span class="sr-only">(current)</span> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="news_español.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research_español.html">Investigación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="teaching_español.html">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="research.html">English</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="masthead">
+      <img class="img-fluid z-depth-1 rounded" src="images/photo1.jpg">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center">
+            <h1 class="font-weight-light">  </h1>
+            <p class="lead">  </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="py-5">
+          <div class="container page-content">
+
+
+              <article>
+
+      <header>
+        <h3>Proyectos y Artículos de Investigación</h3>
+      </header>
+
+      <section class="research-page">
+
+<br />
+<h4 id="Pubs">Publications</h4>
+<hr />
+
+<ul>
+<li>
+<div class="featured-publication">
+<div class="publication-info">
+<p><strong>Organizational Design: Authority Delegation and Moral Hazard.</strong>
+
+<a class="btn btn-outline-primary btn-sm" data-toggle="collapse" href="#ODADMH-abstract" role="button" aria-expanded="false" aria-controls="ODADMH-abstract">
+  Abstract
+   </a>
+   <a href="https://drive.google.com/file/d/1B4L3GayD9Q7UoA5ILdyvpGlGNYn1jba8/view?usp=sharing" class="btn btn-outline-success btn-sm" role="button"> Working Paper </a>
+   <br> <span style="color: gray;"> Joint with <a href="https://sites.google.com/site/joacoleff/">Joaquín Coleff</a>  </span>
+   <br> <span style="font-weight: 900;">Aceptado en el Journal of Industrial Economics</span>
+ </p>
+
+
+   <!-- Abstract oculto -->
+   <div class="collapse" id="ODADMH-abstract">
+      <div class="card card-body" style="font-size:0.9em; line-height:1em; color: gray;">
+        <p><strong>Abstract</strong> : We consider an organization with two projects which have productive spillovers. Three individuals are active in this organization: two agents, each specialized in one project, and the CEO, who is a generalist. The owner of the organization allocates authority over each project to these three individuals. This allocation determines the organizational design and aims to maximize profits subject to incentive constraints. We show that the optimal organizational design can take one of the following forms: centralization, decentralization, hierarchical delegation, or cross-authority. Two forces drive the optimal organizational design: (i) the CEO’s productivity relative to the agents’ in exerting effort, and (ii) the value of spillovers relative to profits in the project over which an individual has authority. We illustrate the practical relevance of our model by analyzing the emergence of hierarchical delegation in Facebook’s major 2018 reorganization.
+        </p>
+      </div>
+   </div>
+   </div>
+ <figure class="publication-figure">
+   <img src="images/model-graph.png" alt="Regions in which different organizational designs are optimal, by CEO productivity and spillovers" loading="lazy">
+   <figcaption>Optimal organizational designs</figcaption>
+ </figure>
+</div>
+</li>
+</ul>
+
+
+<br />
+<h4 id="working-papers" class="research-section-heading"> Working Papers
+<button class="btn btn-outline-primary btn-sm research-toggle" type="button" data-toggle="collapse" data-target="#working-papers-content" aria-expanded="false" aria-controls="working-papers-content">
+<span class="label-show">Show</span><span class="label-hide">Hide</span>
+<i class="fas fa-chevron-down toggle-icon" aria-hidden="true"></i>
+</button>
+</h4>
+<hr />
+
+<div class="collapse" id="working-papers-content">
+<div class="card card-body" style="font-size:0.9em; line-height:1em; color: gray;">
+
+<ul>
+  <li>
+<p><strong> Contract Shifting <em>vs.</em> Contract Splitting in Public Procurement. </strong>
+  <a class="btn btn-outline-primary btn-sm" data-toggle="collapse" href="#jmp-abstract" role="button" aria-expanded="false" aria-controls="jmp-abstract">
+    Abstract
+  </a>
+    <a href="https://drive.google.com/file/d/1RLDzT8VWDfvOIreLROJXD_YT_HlCPqi7/view?usp=sharing" class="btn btn-outline-success btn-sm" role="button"> Working Paper </a>
+    <br>  <font color="gray"><strong> Job Market Paper </strong></font> <font color="red"><em> (Nueva versión disponible pronto) </em></font>
+    <br> <span style="color: gray;"> Joint with <a href="https://isacolave.github.io/">Isac Olave</a> </span>
+  </p>
+
+  <!-- Abstract oculto -->
+  <div class="collapse" id="jmp-abstract">
+    <div class="card card-body" style="font-size:0.9em; line-height:1em; color: gray;">
+      <p><strong>Abstract</strong> : This paper investigates the consequences of prohibiting discretion in public procurement. We study whether procurement officials manipulate the estimated value of contracts to avoid crossing regulatory thresholds and how this impacts procurement outcomes. We exploit the unique design of the procurement law in Colombia to document three empirical findings. First, there is substantial manipulation of contracts around the threshold. Second, manipulation occurs in two different forms: <em>contract shifting</em> and <em>contract splitting</em>. Contract shifting means decreasing the estimated value of the contract while contract splitting refers to dividing a contract into multiple smaller parts. We show that contract shifting is the main form of manipulation in this context. Third, manipulation decreases the final value paid and does not affect the number of bidders or the frequency of repeated winners. However, manipulation decreases the quality of the procedure. We propose a model of public procurement that explains when each type of manipulation is used and outlines its welfare implications. We find that procurers promote contract shifting when they face small purchase thresholds and contract splitting when they face large ones. Conversely, the model shows that contract splitting is welfare-enhancing for small thresholds and decreasing for large ones. Contract shifting is always welfare-enhancing. We conclude by discussing the policy implications.
+      </p>
+    </div>
+  </div>
+</li>
+
+<li>
+<p><strong>Designing Managerial Incentives in Competitive Markets</strong> <span style="color: gray;">
+  <a class="btn btn-outline-primary btn-sm" data-toggle="collapse" href="#DMICM-abstract" role="button" aria-expanded="false" aria-controls="DMICM-abstract">
+  Abstract
+   </a>
+   <a href="https://rednie.eco.unc.edu.ar/files/DT/392.pdf?utm_source=perfit&utm_medium=email&utm_campaign=Nuevos%20Documentos%20de%20Trabajo%2017/04" class="btn btn-outline-success btn-sm" role="button"> Working Paper </a>
+</p>
+
+  <!-- Abstract oculto -->
+  <div class="collapse" id="DMICM-abstract">
+     <div class="card card-body" style="font-size:0.9em; line-height:1em; color: gray;">
+      <p> <strong>Abstract</strong> : This paper investigates how market competition influences the way principals design incentive contracts for managers. We study a moral hazard setting where two principals each employ a risk neutral agent (manager). Each agent makes a decision on effort leading stochastically to an outcome. These outcomes are observable for each principal and used to design incentives based on their joint realizations. We isolate the effect of market competition in two channels: market information and market structure. First, market information captures the correlation between the outcomes generated by the agents. Second, market structure indicates the profits that each principal obtains from a given realization of agents’ outcomes. We make two contributions: we show i) that the optimal incentives are fully determined by the correlation of outcomes between agents; and ii) that the market structure determines whether the optimal incentive schemes are implementable. In more competitive markets, principals are limited to contracts that reward an agent’s outperformance relative to the rival. By contrast, in less competitive markets, principals can implement a wider range of optimal incentive schemes. Our analysis sheds light on why incentive design varies across industries.
+      </p>
+    </div>
+ </div>
+</li>
+</ul>
+</div>
+</div>
+
+<h4 id="work-in-progress" class="research-section-heading">Work in Progress
+  <button class="btn btn-outline-primary btn-sm research-toggle" type="button" data-toggle="collapse" data-target="#work-in-progress-content" aria-expanded="false" aria-controls="work-in-progress-content">
+    <span class="label-show">Show</span><span class="label-hide">Hide</span>
+    <i class="fas fa-chevron-down toggle-icon" aria-hidden="true"></i>
+  </button>
+</h4>
+<hr />
+
+<div class="collapse" id="work-in-progress-content">
+<div class="card card-body" style="font-size:0.9em; line-height:1em; color: gray;">
+
+<!--- <br/> -->
+
+<ul>
+  <li>
+<p><strong>Optimal Incentives in Competing Organizations</strong>  <span style="color: gray;">  </span>
+
+<a class="btn btn-outline-primary btn-sm" data-toggle="collapse" href="#OICO-abstract" role="button" aria-expanded="false" aria-controls="OICO-abstract">
+  Abstract
+   </a>
+   <a href="https://drive.google.com/file/d/1NZDf7k5HtRh_rH6wflWf0oiwhNykYo3u/view?usp=sharing" class="btn btn-outline-success btn-sm" role="button"> Working Paper </a> 
+   <br> <font color="red"><em> (Nueva versión disponible pronto)</em></font>
+  </p>
+  
+    
+
+<!-- Abstract oculto -->
+<div class="collapse" id="OICO-abstract">
+   <div class="card card-body" style="font-size:0.9em; line-height:1em; color: gray;">
+     <p><strong>Abstract</strong> : This paper investigates how market competition affects the optimal incentives of several agents in an organization. We study a moral hazard model where two principals hire two agents each. Each agent makes a binary decision of effort that is stochastically related to a binary result. These results are observable for each principal who offer contingent contracts on their joint realizations. Market competition takes two forms in this model, market information and market structure. First, market information refers to the relationships between agents’ results. Second, market structure indicates the profits that each principal obtain for a given realization of agents’ results. A widespread notion in non competing multi agent organizations is that a positive relationship among agents’ results of effort in an organization is sufficient to promote competition among agents. The main result of the model reverse this notion when organizations compete. The optimal incentive scheme mixed cooperation and competition among agents as soon as there is market information available. These mixed incentives offered by one principal are more used when the difference between the stochastic relationship from effort to results becomes more precise for the other principal. Additionally, we study principals’ effort encouragement under different market structures and provide examples for Bertrand and Cournot competition. Finally, we motivate our results with a common ownership illustration.
+     </p>
+   </div>
+</div>
+</li>
+
+  <li>
+<p><strong>Contracting with an Unaware Agent</strong> <span style="color: gray;">
+
+    <a class="btn btn-outline-primary btn-sm" data-toggle="collapse" href="#CUA-abstract" role="button" aria-expanded="false" aria-controls="CUA-abstract">
+    Abstract
+     </a>
+  </p>
+
+  <!-- Abstract oculto -->
+  <div class="collapse" id="CUA-abstract">
+     <div class="card card-body" style="font-size:0.9em; line-height:1em; color: gray;">
+      <p> <strong>Abstract</strong> : This paper analyzes incomplete contracts as a form of profiting from principal's superior information. We study the design of an incentive scheme that jointly determines rewards for outcomes and disclosure of states initially unknown to the agent. We consider a moral hazard model with a fully aware risk-neutral principal and a partially aware risk-averse agent. Individuals differ in awareness in the sense that their prior distribution over the states do not have the same support.  In particular, the agent's unawareness of some states allows the principal to offer three types of incentive schemes: complete, opaque, and incomplete. We show that the principal can benefit from i) offer an opaque incentive schemes when the states of the world affect the stochastic relationship between the agent's effort and outcomes, and ii) incomplete incentive schemes when the states of the world affect the set of possible outcomes which can be reached by agent's effort.
+      </p>
+    </div>
+ </div>
+</li>
+    
+      <li>
+<p><strong>A Weak-Collusion-Proof Auction for Procurement: Theory and Evidence</strong> <span style="color: gray;">
+
+    <a class="btn btn-outline-primary btn-sm" data-toggle="collapse" href="#WCPAP-abstract" role="button" aria-expanded="false" aria-controls="WCPAP-abstract">
+    Abstract
+     </a>
+    <br> <span style="color: gray;"> Joint with <a href="https://nikizampetakis.github.io/">Nikiforos Zampetakis</a>  </span>
+  </p>
+
+  <!-- Abstract oculto -->
+  <div class="collapse" id="WCPAP-abstract">
+     <div class="card card-body" style="font-size:0.9em; line-height:1em; color: gray;">
+      <p> <strong>Abstract</strong> : Collusion is one of the major concerns in public procurement since it decreases welfare. We propose a new auction format, the Second Interval Auction (SIA), which is strategy-proof and robust to weak forms of collusion in which bidders coordinate on market division without transfers. The SIA groups bidders into non-collusive and collusive ones. The allocation rule combines high competition for non-collusive bidders while random allocation for collusive ones, which breaks their incentives to collude.  We evaluate the mechanism using data from the Texas school milk market, where a bid-rigging cartel was uncovered by antitrust authorities. Monte Carlo simulations indicate that SIA reduces winning prices by 2.9% relative to the collusive outcome. Using observed cartel bids, we construct counterfactual bidding behavior under SIA and find that the mechanism lowers winning prices by 4.5% on average. A back-of-the-envelope calculation based on our estimates implies that adopting SIA in the Texas milk market would have reduced procurement expenditures by approximately $250,000 per year.
+      </p>
+    </div>
+ </div>
+</li>
+
+      <li>
+<p><strong>Detecting Contract Splitting in Public Procurement</strong> <span style="color: gray;">
+    <!--
+    <a class="btn btn-outline-primary btn-sm" data-toggle="collapse" href="#DCSPP-abstract" role="button" aria-expanded="false" aria-controls="jmp-abstract">
+    Abstract
+     </a>
+     -->
+    <br> <span style="color: gray;"> Joint with <a href="https://williamaboucaya.github.io/">William Aboucaya</a>, <a href="https://isacolave.github.io/">Isac Olave</a> and <a href="https://fr.linkedin.com/in/andreas-priambodo-078706193">Andreas Priambodo</a>  </span>
+  </p>
+
+  <!-- Abstract oculto -->
+  <div class="collapse" id="DCSPP-abstract">
+     <div class="card card-body" style="font-size:0.9em; line-height:1em; color: gray;">
+      <p> <strong>Abstract</strong> : Collusion is one of the major concerns in public procurement since it decreases welfare. We propose a new auction format, the Second Interval Auction (SIA), which is strategy-proof and robust to weak forms of collusion in which bidders coordinate on market division without transfers. The SIA groups bidders into non-collusive and collusive ones. The allocation rule combines high competition for non-collusive bidders while random allocation for collusive ones, which breaks their incentives to collude.  We evaluate the mechanism using data from the Texas school milk market, where a bid-rigging cartel was uncovered by antitrust authorities. Monte Carlo simulations indicate that SIA reduces winning prices by 2.9% relative to the collusive outcome. Using observed cartel bids, we construct counterfactual bidding behavior under SIA and find that the mechanism lowers winning prices by 4.5% on average. A back-of-the-envelope calculation based on our estimates implies that adopting SIA in the Texas milk market would have reduced procurement expenditures by approximately $250,000 per year.
+      </p>
+    </div>
+ </div>
+</li>
+
+
+</ul>
+
+</div>
+</div>
+
+<br />
+<!--h2 id="other-publications">Other Publications</h2-->
+<hr />
+<p>Foto: Modalen, Noruega (2022).</p>
+
+</section class="research-page">
+
+
+    </article>
+
+          </div>
+        </div>
+
+<!-- JS: jQuery, Popper, Bootstrap, MDB -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+  </body>
+</html>

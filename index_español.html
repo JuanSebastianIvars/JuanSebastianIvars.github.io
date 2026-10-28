@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <meta charset="utf-8">
+    <!-- need to complete this part above -->
+    <title>Juan Sebastián Ivars</title>
+
+    <!-- Bootstrap & MDB -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+ <!-- Styles -->
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Bloque de estilos CSS -->
+  <style>
+     body {
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+     }
+
+     .container {
+       width: 90%;
+       max-width: 1200px;
+       margin: auto;
+     }
+
+     img {
+       max-width: 100%;
+       height: auto;
+     }
+
+     /* Estilo especial para pantallas chicas */
+     @media (max-width: 768px) {
+       body {
+         font-size: 16px;
+       }
+       .menu {
+         display: none; /* ejemplo: ocultar menú grande en celular */
+       }
+     }
+
+     /* Subtle, rounded controls throughout the research list. */
+     .research-page .btn {
+       border-radius: 999px !important;
+       padding: 0.34rem 0.85rem !important;
+       font-size: 0.78rem;
+       font-weight: 500;
+       line-height: 1.3;
+       letter-spacing: 0;
+       text-transform: none;
+       box-shadow: none !important;
+       margin: 0.1rem 0.25rem 0.15rem 0;
+     }
+
+     .research-page .btn:hover,
+     .research-page .btn:focus {
+       box-shadow: 0 2px 9px rgba(0, 0, 0, 0.09) !important;
+     }
+
+     .research-section-heading {
+       display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+       gap: 0.65rem;
+     }
+
+     .research-toggle .toggle-icon {
+       display: inline-block;
+       margin-left: 0.3rem;
+       font-size: 0.7rem;
+       transition: transform 0.2s ease;
+     }
+
+     .research-toggle[aria-expanded="true"] .toggle-icon {
+       transform: rotate(180deg);
+     }
+
+     .research-toggle .label-hide { display: none; }
+     .research-toggle[aria-expanded="true"] .label-show { display: none; }
+     .research-toggle[aria-expanded="true"] .label-hide { display: inline; }
+
+     /* The illustration belongs to the featured publication only. */
+     .featured-publication {
+       display: grid;
+       grid-template-columns: minmax(0, 1fr) minmax(205px, 275px);
+       gap: 1.75rem;
+       align-items: start;
+     }
+
+     .publication-figure {
+       margin: 0 0 1rem;
+       padding: 0.55rem;
+       border: 1px solid #e6e9ed;
+       border-radius: 12px;
+       background: #fff;
+       text-align: center;
+     }
+
+     .publication-figure img {
+       display: block;
+       width: 100%;
+       height: auto;
+       transition: opacity 0.2s ease;
+     }
+
+     .publication-figure figcaption {
+       margin-top: 0.35rem;
+       font-size: 0.73rem;
+       line-height: 1.4;
+       color: #7b8289;
+     }
+
+     @media (max-width: 800px) {
+       .featured-publication { grid-template-columns: 1fr; gap: 0.6rem; }
+       .publication-figure { max-width: 300px; margin: 0 auto 1rem; }
+     }
+   </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light navbar-expand-md">
+
+      <a class="navbar-brand" href="/"> <b>Juan Sebastián Ivars</b> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index_español.html">Inicio <span class="sr-only">(current)</span> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news_español.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research_español.html">Investigación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="teaching_español.html">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">English</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="masthead">
+      <img class="img-fluid z-depth-1 rounded" src="images/photo1.jpg">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center">
+            <h1 class="font-weight-light">  </h1>
+            <p class="lead">  </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="py-5">
+          <div class="container page-content">
+
+              <article>
+
+      <section class="research-page">
+        <h3 id="presentation">Bienvenidos</h3>
+
+        <div class="profile float-right">
+          <img class="img-fluid z-depth-1 rounded" src="images/Photo Juan.jpg" width="300" height="350">
+        </div>
+    <p>Mi nombre es Juan Sebastián Ivars y soy Profesor Visitante (tenure-track) en el <a href="https://dea.uib.eu/">Departamento de Economía Aplicada (DEA) de la Universidad de las Islas Baleares (UIB).</a></p>
+
+    <p>Recibí mi Doctorado en Economía en el departamento de economía de <a href="https://www.sciencespo.fr/department-economics/en.html"> Sciences Po</a> bajo la supervisión de <a href="https://sites.google.com/view/hagenbachjeanne/home"> Jeanne Hagenbach.</a> </p>
+
+    <p> En el siguiente link se puede consultar mi <a href="documents/CV - 2022 - Juan Sebastián Ivars.pdf" target="_blank">CV</a>.</p>
+
+    <br />
+    <h3 id="research">Intereses de Investigación</h3>
+
+    <p>Soy un microeconomista que disfruta de la teoría y los métodos empíricos para abordar temas de economía aplicada.  </p>
+
+    <p>En particular mis áreas de investigación preferida son: teoría de contratos, organización industrial y economía de las organizaciones. <br />
+    <a href="research.html">Conoce más sobre mis actividades de investigación.</a></p>
+
+    <br />
+    <h3 id="contact">Contacto</h3>
+
+    <p><a href="mailto:juan-sebastian.ivars@uib.cat">juan [dash] sebastian [dot] ivars [at] uib [dot] cat</a></p>
+
+  <hr />
+  <p>Foto: Modalen, Noruega (2022).</p>
+
+      </section>
+
+    </article>
+
+          </div>
+        </div>
+
+ <!-- JS: jQuery, Popper, Bootstrap, MDB -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+  </body>
+</html>
